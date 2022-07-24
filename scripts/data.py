@@ -114,17 +114,17 @@ def main(args):
             if end>max_end:end=max_end-1
             execute(start,end) 
 
-    # save config
-    config={"vocab":cfg.vocab,
-            "pos_max":cfg.pos_max,
-            "img_height":cfg.img_height,
-            "img_width" :cfg.img_width}
+    # # save config
+    # config={"vocab":cfg.vocab,
+    #         "pos_max":cfg.pos_max,
+    #         "img_height":cfg.img_height,
+    #         "img_width" :cfg.img_width}
 
-    config_json="../config.json"
-    with open(config_json, 'w') as fp:
-        json.dump(config, fp,sort_keys=True, indent=4,ensure_ascii=False)
+    # config_json="../config.json"
+    # with open(config_json, 'w') as fp:
+    #     json.dump(config, fp,sort_keys=True, indent=4,ensure_ascii=False)
 
-    LOG_INFO("use the config.json for training on the dataset.",mcolor="red")
+    # LOG_INFO("use the config.json for training on the dataset.",mcolor="red")
 
 
 if __name__=="__main__":
